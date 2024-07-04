@@ -645,10 +645,15 @@ span.byann-2 {
     /* padding-bottom: 100px; */
     background: aliceblue;
     border: 1px solid #8080803b;
-    position: sticky;
-    top: 39px;
+    /* position: sticky; */
+    /* top: 39px; */
     margin: 0px;
     padding: 0px;
+}
+.slicky-sec {
+    /* border: 1px solid #8080803b; */
+    position: sticky;
+    top: 30px;
 }
   .sec-rig-img>img {
     height: 100%;
@@ -696,4 +701,28 @@ span.byann-2 {
     visibility: visible;
     transition: 0.5s;
     border-radius: 4px;
+}
+.sec-2-img-cont-mai img {
+    width: 100%;
+}
+
+.sec-2-cnt-img {
+    margin-top: 30px;
+    /* position: relative; */
+    padding: 0px;
+}
+.sec-right-2nd {
+    /* position: absolute; */
+    top: 0;
+}
+.sec-2-img-cont-mai {
+    background: #ff000026;
+    /* height: auto; */
+    padding: 20px;
+}
+
+.sec-end-df {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
