@@ -531,11 +531,6 @@ span.post-media_title {
 .sec_2-cont {
     margin: 30px 0;
 }
-.sec_2nd {
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
-}
 
 .hed-1 i {
     color: red;
@@ -854,3 +849,75 @@ strong.m_val::before {
     background: red;
     transition: 0.3s;
 }
+/* +++++++++++++++++++++ Section-2 End +++++++++++++++++ */
+/* +++++++++++++++++++++ Section-3 start +++++++++++++++++ */
+/* +++++++++++++++++++++ Section-3 End +++++++++++++++++ */
+/* +++++++++++++++++++++ Footer Start +++++++++++++++++ */
+.footer_area {
+    padding: 60px 0;
+}
+
+.sec_footer-fist img {
+    width: 100%;
+    height: 100%;
+}
+
+.sec_footer-fist {
+    width: clamp(160px,18vw,220px);
+}
+
+.footer {background-color: #222;}
+
+.sec_footer-title p {
+    margin: 20px 0;
+    color: #fff;
+    font-size: clamp(12px,3.2vw,14px);
+    line-height: 30px;
+}
+.footer-sec-2nd h4 {
+    font-size: 16px;
+    font-weight: 900;
+    color: #fff;
+}
+
+
+.footer-sec-2nd h4 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    border-bottom: 1px solid #80808061;
+    padding-bottom: 20px;
+}
+
+
+.sec_footer-2nd-listee ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sec_footer-2nd-listee ul > li {
+    list-style: none;
+}
+
+.sec_footer-2nd-listee ul > li > a {
+    text-decoration: none;
+    color: #b9b5b5;
+    font-size: 14px;
+    font-weight: 600;
+}
+.sec_subsribe-footer {
+    width: 80%;
+    height: 0;
+}
+
+.sec_subsribe-footer input {
+    width: 80%;
+    height: 48px;
+    padding-left: 20px;
+    background-color: #0000008c;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #ddcfcfb8;
+    outline: none;
+}
+/* +++++++++++++++++++++ Footer Start +++++++++++++++++ */
