@@ -227,6 +227,9 @@ li {
 nav.navbar.navbar-expand-lg.navbar-light {
     padding: 0;
 }
+.navbar .navbar-toggler {
+    margin: 10px 0;
+}
 .sec_2-header-list ul li a {
     text-decoration: none;
     color: #000;
@@ -277,6 +280,7 @@ nav.navbar.navbar-expand-lg.navbar-light {
 
 nav.navbar.navbar-expand-lg.navbar-light {
     justify-content: space-between !important;
+    padding: 0px;
 }
 .navbar-collapse {
     justify-content: right !important;
@@ -410,18 +414,23 @@ li.main__sec-li a {
   }
 .sec_2-tab-1 img {
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     height: 200px;
     object-fit: cover;
 }
+.sec_2-tab-1 .pod_me {
+    position: absolute;
+    top: 0;
+}
 .sec_2-tab-1 {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 5px;
     position: relative;
     overflow: hidden;
 }
-.sec_2nd-tab-hed {
-    margin-top: 30px;
+
+.sec_2nd-tab-hed-title {
+    margin-top: 40px;
 }
 .sec_2nd-tab-hed-title h3 {
     font-size: 20px;
@@ -486,7 +495,7 @@ span.sec-1-clock-icon-1 i {
     content: "";
     position: absolute;
     background: #120e0ea6;
-    border-radius: 9px;
+    /* border-radius: 9px; */
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
@@ -520,12 +529,12 @@ span.post-media_title {
     opacity: 1;
     visibility: visible;
     transition: 0.5s;
-    height: 26px;
+    height: 25px;
     width: 150px;
     background: #808080a6;
     border-top-left-radius: 13px;
     transition: 0.5s;
-    border-bottom-right-radius: 8px;
+    /* border-bottom-right-radius: 8px; */
     text-align: center;
 }
 .sec_2-cont {
@@ -553,6 +562,10 @@ img.img-control {
     height: 400px;
     object-fit: cover;
     transition: 0.9s;
+}
+.sec_2-tab-slid h3 {
+    background: #ffffff1f;
+    color: #fff;
 }
 .sec_2-tab-slid{
     position: relative;
@@ -617,7 +630,107 @@ span.byann-2 {
     padding: 14px;
     color: #fff;
 }
-/* +++++++++++++++++++++ Section-2 End +++++++++++++++++++ */
+
+
+/* +++++++++++++++++++++ Section-3 start +++++++++++++++++ */
+
+.sec-3 {
+    padding: 100px 0px;
+    background: #88868463;
+    /* padding-top: 80px; */
+}
+.sec_3rd-imges {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #ffffff69;
+}
+.sec_3rd-imges img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sec_3rd-imges .slide-mee {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.main-sec-3rd-area {
+    background: #ffffffde;
+}
+
+.sec-3rd-title h4 {
+    font-size: clamp(14px,3.2vw,18px);
+    color: #000;
+    font-weight: 700;
+    padding: 6px 20px;
+}
+.sec-3-area-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    padding-bottom: 30px;
+}
+
+.sec-3-area-con h4 {
+    font-size: 14px;
+    color: #000;
+}
+.swiperpag-con {
+    /* position: absolute; */
+    /* width: 110px; */
+    /* right: 0; */
+    /* top: -30px; */
+}
+.auto-swiper-main-con {
+    position: relative;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+.swiperpag-con .swiper-button-next {
+    background: #9c8c8c85;
+    width: 50px;
+    color: #000;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    right: 0;
+}
+.swiperpag-con .swiper-button-next::after {
+    font-size: 22px;
+    /* transform: rotate(180deg); */
+}
+.swiperpag-con .swiper-button-prev::after {
+    font-size: 22px;
+    /* transform: rotate(180deg); */
+}
+.swiperpag-con .swiper-button-prev {
+    background: #9c8c8c85;
+    width: 50px;
+    color: #000;
+    height: 50px;
+    margin-left: -7px;
+    border-radius: 50px;
+    /* margin-left: 1182px; */
+}
+.h4-head {
+    font-size: 44px;
+    font-weight: 900;
+    color: #000;
+}
+.main-section-3nad.d-flex {
+    display: flex !important;
+    width: 100%;
+    position: absolute;
+    top: -80px;
+    justify-content: center;
+}
+/* +++++++++++++++++++++ Section-3 End +++++++++++++++++ */
+/* +++++++++++++++++++++ Section-2 Start +++++++++++++++++++ */
 
 
 .tab-container {
@@ -850,8 +963,7 @@ strong.m_val::before {
     transition: 0.3s;
 }
 /* +++++++++++++++++++++ Section-2 End +++++++++++++++++ */
-/* +++++++++++++++++++++ Section-3 start +++++++++++++++++ */
-/* +++++++++++++++++++++ Section-3 End +++++++++++++++++ */
+
 /* +++++++++++++++++++++ Footer Start +++++++++++++++++ */
 .footer_area {
     padding: 60px 0;
@@ -906,18 +1018,35 @@ strong.m_val::before {
     font-weight: 600;
 }
 .sec_subsribe-footer {
-    width: 80%;
+    width: 100%;
     height: 0;
 }
 
 .sec_subsribe-footer input {
-    width: 80%;
+    width: 100%;
     height: 48px;
     padding-left: 20px;
-    background-color: #0000008c;
+    background-color: transparent;
     color: #fff;
     font-size: 14px;
-    border: 1px solid #ddcfcfb8;
+    border: 1px solid #dbd5d569;
+    border-radius: 4px;
     outline: none;
+}
+.sec_subsribe-footer input::placeholder {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+}
+.sec_subsribe-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    gap: 7px;
+}
+
+.sec_subsribe-footer .header-sec-2-main {
+    padding: 24px;
+    border-radius: 4px;
 }
 /* +++++++++++++++++++++ Footer Start +++++++++++++++++ */
