@@ -1,3 +1,8 @@
+$('button.navbar-toggler').click(()=>{
+  $('div#navbarSupportedContent').slideToggle();
+})
+
+
 function openTab(evt, tabName) {
     var i, tabContent, tabButtons;
   
@@ -38,3 +43,4 @@ function openTab(evt, tabName) {
     document.getElementById(sectionId).style.display = "block";
     evt.currentTarget.className += " active";
   }
+  
