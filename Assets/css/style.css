@@ -1,5 +1,5 @@
 :root {
-    --buton-color: #ff4700;
+    --buton-color: #eb1f20;
     --seriffont: sans-serif;
 }
 
@@ -19,7 +19,7 @@ body {
 
 /* +++++++++++++++++++++ Header Start=1 ++++++++++++++++++++  */
 #all_news {
-    width: 300px;
+    width: 360px;
     height: 38px;
     margin: 40px auto 0;
     overflow: hidden;
@@ -310,7 +310,7 @@ nav.navbar.navbar-expand-lg.navbar-light {
     color: #fff;
     font-weight: 700;
     background: #000;
-    padding: 6px;
+    padding: 9px;
 }
 
 .sec_2-main-heder p {
@@ -350,7 +350,7 @@ li.main__sec-li {
 }
 
 a.nav-link {
-    font-size: clamp(12px, 1.2vw, 16px);
+    font-size: clamp(14px, 1.2vw, 16px);
     font-weight: 800;
     color: #000 !important;
 }
@@ -420,6 +420,7 @@ span.sec-1-clock-icon {
 
 span.sec-1-clock-icon i {
     color: red;
+    margin-right: 6px;
 }
 
 .sec_1area::before {
@@ -496,7 +497,7 @@ span.sec-1-clock-icon i {
 
 .sec_2-tab-1 {
     /* margin-top: 40px; */
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     position: relative;
     overflow: hidden;
 }
@@ -540,6 +541,7 @@ span.sec-1-clock-icon-1 {
 
 span.sec-1-clock-icon-1 i {
     color: var(--buton-color);
+    margin-right: 5px;
 }
 
 .botom {
@@ -590,7 +592,11 @@ span.sec-1-clock-icon-1 i {
     bottom: -19px;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
+    transition: 0.5s;
+    height: 25px;
+    width: 150px;
+    text-align: center;
 }
 
 span.post-media_title {
@@ -611,17 +617,17 @@ span.post-media_title {
 }
 
 .sec_2-tab-1:hover .img_icon-title-1 {
-    bottom: 0;
+    bottom: 0px;
     opacity: 1;
     visibility: visible;
     transition: 0.5s;
-    height: 25px;
-    width: 150px;
+    /* height: 25px; */
+    /* width: 150px; */
     background: #808080a6;
     border-top-left-radius: 13px;
     transition: 0.5s;
     /* border-bottom-right-radius: 8px; */
-    text-align: center;
+    /* text-align: center; */
 }
 
 .sec_2-cont {
@@ -656,8 +662,8 @@ img.img-control {
 }
 
 .sec_2-tab-slid h3 {
-    background: #ffffff1f;
     color: #fff;
+    margin-top: 20px;
 }
 
 .sec_2-tab-slid {
@@ -669,18 +675,29 @@ img.img-control {
     position: absolute;
     top: 30px;
     left: 30px;
+    z-index: 1;
 }
 
 span.byann-2 {
     font-size: 12px;
     color: #fff;
     font-weight: 900;
+    margin-left: 8px;
 }
-
+.sec_2-tab-slid::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #09090952;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
 .sec-2nd-main-hed-tit {
     position: absolute;
     bottom: 5%;
     left: 5%;
+    z-index: 1;
 }
 
 .main-sec-pagi {
@@ -1125,7 +1142,7 @@ strong.m_val::before {
     font-weight: 900;
     color: #fff;
     border-bottom: 1px solid #80808061;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 
@@ -1167,7 +1184,11 @@ strong.m_val::before {
     font-size: 12px;
     font-weight: 700;
 }
-
+.header-sec-2-main > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
 .sec_subsribe-footer {
     display: flex;
     align-items: center;
@@ -1195,9 +1216,15 @@ strong.m_val::before {
 
 .about-nav-head span>p {
     margin: 0;
-    color: #000;
+    color: #474444;
 }
-
+.about-nav-head span > a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
 .sec-review-img img {
     width: 100%;
     object-fit: cover;
@@ -1220,7 +1247,8 @@ strong.m_val::before {
     border-radius: 50px;
     height: 50px;
     width: 50px;
-    border: 1px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    color: black;
 }
 
 .pago-con-ne-pe .swiper-button-prev {
@@ -1229,7 +1257,8 @@ strong.m_val::before {
     width: 50px;
     background: #fff;
     border-radius: 50px;
-    border: 1px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    color: black;
 }
 
 .swiper-button-prev::after {
