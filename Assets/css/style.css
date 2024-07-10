@@ -448,6 +448,10 @@ span.sec-1-clock-icon i {
     font-weight: 600;
     font-size: clamp(12px, 2.2vw, 14px);
 }
+.sec_2nd {
+    display: flex;
+    justify-content: space-between;
+}
 
 .tabs {
     display: flex;
@@ -525,6 +529,7 @@ span.byann-1 {
     font-size: 12px;
     color: #000;
     font-weight: 700;
+    margin-left: 5px;
 }
 
 span.sec-1-clock-icon-1 {
@@ -657,6 +662,7 @@ img.img-control {
 
 .sec_2-tab-slid {
     position: relative;
+    margin-bottom: 30px;
 }
 
 .banner-icon {
